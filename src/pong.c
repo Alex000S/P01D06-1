@@ -23,7 +23,7 @@ int ping_pong(void) {
     char move_racket1, move_racket2;
     int score1 = 0, score2 = 0;
 
-    while ((score1 < 21) || (score2 < 21)) {
+    while ((score1 < 21) && (score2 < 21)) {
         print_score(score1, score2);
         print_field(pos_racket1, pos_racket2, pos_ball_x, pos_ball_y);
         if (pos_ball_x == 0) {
